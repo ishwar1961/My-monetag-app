@@ -1,22 +1,26 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Monetag Mini App</title>
+    <meta charset="UTF-8">
+    <title>My Monetag Mini App</title>
 
-  <!-- Monetag SDK -->
-  <script src="//libtl.com/sdk.js" data-zone="9944174" data-sdk="show_9944174"></script>
-
-  <!-- Rewarded interstitial script -->
-  <script>
-    show_9944174().then(() => {
-        // This function runs after the user watches the ad
-        alert('You have seen an ad!');
-    });
-  </script>
+    <!-- Monetag SDK -->
+    <script src="//lib.monetag.com/sdk.js" data-zone="9944174" data-sdk="show_rewarded_interstitial"></script>
 </head>
 <body>
-  <h1>Welcome to My Monetag Mini App</h1>
-  <p>If you see this page, your Mini App is running with Monetag SDK!</p>
+    <h1>Welcome to My Monetag Mini App</h1>
+    <p>If you see this page, your Mini App is running with Monetag SDK!</p>
+
+    <!-- Button to show Rewarded Interstitial -->
+    <button id="showAdBtn">Watch Ad & Get Reward</button>
+
+    <script>
+        document.getElementById('showAdBtn').addEventListener('click', function() {
+            show_9944174().then(() => {
+                alert('You have seen an ad!');
+            });
+        });
+    </script>
 </body>
 </html>
