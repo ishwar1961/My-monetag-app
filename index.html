@@ -1,39 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Monetag Mini App</title>
-
-    <!-- Monetag SDK -->
-    <script src="//lib.monetag.com/sdk.js" data-zone="3056346" data-sdk="show_rewarded_interstitial"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Offline Test Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Monetag Mini App</h1>
-    <p>If you see this page, your Mini App is running with Monetag SDK!</p>
-
-    <!-- Button to show Rewarded Interstitial -->
-    <button id="showAdBtn">Watch Ad & Get Reward</button>
-
-    <script>
-        document.getElementById('showAdBtn').addEventListener('click', function() {
-            show_3056346().then(() => {
-                alert('You have seen an ad!');
-            });
-        });
-    </script>
-    <!-- Your existing scripts, if any -->
-    <script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
-        .then(function(registration) {
-            console.log('Service Worker registered with scope:', registration.scope);
-        })
-        .catch(function(error) {
-            console.log('Service Worker registration failed:', error);
-        });
-    }
-    </script>
-</body>
-</html>
+  <h1>🌐 My Website</h1>
+  <p>This is a simple page to test offline functionality with service worker.</p>
+  <script src="main.js"></script>
 </body>
 </html>
