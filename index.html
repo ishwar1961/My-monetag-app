@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Google Site Verification -->
+  <meta name="google-site-verification" content="wYTMTDPouwfmqTFsk1ktbQk9h94qXiKLzIWWadfllBs" />
+
+  <!-- ✅ Monetag Site Verification -->
+  <meta name="monetag-verification" content="8115599d6ef12c155484eb48e1c92cf9" />
+
+  <title>AdTradeGame | Monetag Integration Test</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Monetag Ad Scripts -->
+  <script async data-cfasync="false" src="https://3nbf4.com/pfe/current/tag.min.js?z=10023933"></script>
+  <script async data-cfasync="false" src="https://3nbf4.com/pfe/current/tag.min.js?z=10054005"></script>
+  <script async data-cfasync="false" src="https://3nbf4.com/pfe/current/tag.min.js?z=10054006"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #0078ff;
+    }
+    #monetag-inpage-ad {
+      width: 320px;
+      height: 250px;
+      border: 2px dashed #0078ff;
+      background: #fff;
+      margin: 30px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to AdTradeGame</h1>
+  <p>This website is verified and connected with Monetag for monetization testing.</p>
+
+  <!-- ✅ Visible Ad Box -->
+  <div id="monetag-inpage-ad">
+    <p>Monetag Ad Loading...</p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      console.log("✅ Monetag scripts loaded successfully");
+    });
+  </script>
+
+  <!-- Optional custom script -->
+  <script src="main.js"></script>
+
+  <!-- ✅ Register Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(reg => console.log('Service Worker registered:', reg.scope))
+          .catch(err => console.log('Service Worker registration failed:', err));
+      });
+    }
+  </script>
+
+  <footer>© 2025 AdTradeGame — All rights reserved.</footer>
+</body>
+</html>
