@@ -1,0 +1,84 @@
+/* ===== General Layout ===== */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #222;
+  text-align: center;
+}
+
+/* ===== Header ===== */
+header {
+  background: #2563eb;
+  color: #fff;
+  padding: 30px 10px;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+header p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* ===== Ad Zone ===== */
+#monetag-ad-zone {
+  margin: 40px auto;
+  max-width: 600px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#monetag-ad-zone h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+/* ===== Visible Ad Box ===== */
+#monetag-ad-box {
+  width: 320px;
+  height: 250px;
+  margin: 20px auto;
+  border: 2px dashed #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #555;
+  background: #eef2ff;
+}
+
+/* ===== Affiliate Section ===== */
+#affiliate-section {
+  background: #fff;
+  padding: 30px 10px;
+  border-top: 1px solid #e5e7eb;
+}
+.affiliate-banners {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.affiliate-banners img {
+  width: 300px;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+.affiliate-banners img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #111827;
+  color: #fff;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
