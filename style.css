@@ -61,16 +61,52 @@ header p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   margin-top: 20px;
 }
 
-.affiliate-banners img {
+.offer-card {
+  background-color: #fff;
   border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  width: 300px;
+  padding-bottom: 15px;
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
   transition: transform 0.3s ease;
 }
 
-.affiliate-banners img:hover {
+/* 🔥 Hover Glow Effect */
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 150, 255, 0.3);
+}
+
+.offer-card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== Call-to-Action Button ===== */
+.cta-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0078ff;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 120, 255, 0.3);
+}
+
+.cta-button:hover {
+  background-color: #005ecc;
+  box-shadow: 0 0 20px rgba(0, 120, 255, 0.5);
   transform: scale(1.05);
 }
 
@@ -94,4 +130,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
   }
-}
+                            }
