@@ -1,0 +1,61 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(135deg, #0078ff, #00c6ff);
+  color: white;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #005fcc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Monetag Section ===== */
+#monetag-section {
+  background: #ffffff;
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Affiliate Section ===== */
+#affiliate-section {
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.affiliate-banners {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.affiliate-banners img {
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.affiliate-banners img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #f1f1f1;
+  color: #555;
+  padding: 1.2rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #e0e0e0;
+}

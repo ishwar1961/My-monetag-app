@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification" content="wYTM...">
+
+  <!-- Monetag Verification -->
+  <meta name="monetag-verification" content="8115599d...">
+
+  <title>Welcome to AdTradeGame</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Monetag Scripts -->
+  <!-- Monetag OnClick (Popunder) -->
+  <script async data-cfasync="false" src="https://3nb.monetag.com/onclick.js"></script>
+
+  <!-- Monetag Luminous In-Page Push -->
+  <script async data-cfasync="false" src="https://3nb.monetag.com/inpage.js"></script>
+
+  <!-- Monetag Anti-AdBlock -->
+  <script async data-cfasync="false" src="https://3nb.monetag.com/antiadblock.js"></script>
+</head>
+
+<body>
+  <h1>Welcome to AdTradeGame</h1>
+  <p>This site is verified with Monetag and ready for monetization.</p>
+
+  <!-- Visible In-Page Push Ad Box -->
+  <div id="monetag-inpage-ad" style="width:320px; height:50px;">
+    <p>Loading Monetag Ad...</p>
+  </div>
+
+  <!-- Your main JavaScript -->
+  <script src="main.js"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('Service Worker registered successfully.');
+          })
+          .catch(function(error) {
+            console.log('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
