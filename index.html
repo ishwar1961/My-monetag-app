@@ -1,72 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="wYTM...">
-
-  <!-- Monetag Verification -->
-  <meta name="monetag-verification" content="8115599d...">
-
-  <title>Welcome to AdTradeGame</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="monetag" content="34b8763657468f058a35747b60f74846" />
+  <title>AdTradeGame | Monetag Verified</title>
 
   <!-- Monetag Global Scripts -->
   <script async data-cfasync="false" src="https://3nb.monetag.com/onclick.js"></script>
   <script async data-cfasync="false" src="https://3nb.monetag.com/inpage.js"></script>
   <script async data-cfasync="false" src="https://3nb.monetag.com/antiadblock.js"></script>
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2f3, #8e9eab);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 20px;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 15px;
+      font-size: 0.9em;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    a {
+      color: #00aaff;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .ad-box {
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 500px;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <h1>Welcome to AdTradeGame</h1>
-    <p>This site is verified with Monetag and ready for monetization.</p>
+    Welcome to AdTradeGame
   </header>
 
   <main>
-    <!-- Lucky Link Zone (Top Section) -->
-    <div id="lucky-link">
-      <script src="https://fpyf8.com/88/tag.min.js" data-zone="9451301" async data-cfasync="false"></script>
-    </div>
-
-    <!-- In-Page Ad Box -->
-    <section id="monetag-inpage">
-      <div id="monetag-inpage-ad" style="width:320px; height:50px; margin:20px auto; text-align:center;">
-        <p>Loading Monetag Ad...</p>
-      </div>
-    </section>
-
-    <!-- Glad Link Zone (Middle Section) -->
-    <div id="glad-link">
-      <script src="https://fpyf8.com/88/tag.min.js" data-zone="9451238" async data-cfasync="false"></script>
-    </div>
-
-    <!-- Superior Link Zone (Bottom Section) -->
-    <div id="superior-link">
-      <script src="https://fpyf8.com/88/tag.min.js" data-zone="9451183" async data-cfasync="false"></script>
+    <p>This site is verified with <strong>Monetag</strong> and ready for monetization.</p>
+    <div class="ad-box">
+      <p>Loading Monetag Ad...</p>
+      <!-- Monetag ad zone will appear here -->
     </div>
   </main>
 
   <footer>
-    <p>© 2025 AdTradeGame. All Rights Reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+    © 2025 AdTradeGame. All Rights Reserved. |
+    <a href="#">Privacy Policy</a> |
+    <a href="#">Contact</a>
   </footer>
-
-  <!-- Service Worker Registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js')
-          .then(function(registration) {
-            console.log('Service Worker registered successfully.');
-          })
-          .catch(function(error) {
-            console.log('Service Worker registration failed:', error);
-          });
-      });
-    }
-  </script>
 </body>
 </html>
