@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>AdTradeGame — Monetized Platform</title>
+  <title>Welcome to AdTradeGame</title>
 
   <!-- Site & Monetag Verification -->
   <meta name="monetag" content="34b8763657468f058a35747b60f74846" />
@@ -12,44 +12,68 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 
-  <!-- ✅ Monetag In-Page Push -->
+  <!-- Monetag Scripts -->
+  <!-- Luminous Tag (In-Page Push) -->
   <script>
     (function(s){
       s.dataset.zone='10054005';
       s.src='https://forfrogadiertor.com/tag.min.js';
-      s.async = true;
+      s.async=true;
+      s.dataset.cfasync='false';
       [document.documentElement, document.body].filter(Boolean).pop().appendChild(s);
     })(document.createElement('script'));
   </script>
 
-  <!-- ✅ Monetag Popunder / Push -->
+  <!-- Well-to-do Tag (Popunder / Push) -->
   <script src="https://fpyf8.com/88/tag.min.js" data-zone="177299" async data-cfasync="false"></script>
 </head>
 
 <body>
-
   <header>
     <h1>Welcome to AdTradeGame</h1>
-    <p>Your monetized site is active and earning.</p>
+    <p>This site is verified with Monetag and ready for monetization.</p>
   </header>
 
   <main>
-    <!-- ✅ Ad Display Placeholder -->
+
+    <!-- Telegram Mini App Button -->
+    <div style="text-align:center; margin:20px 0;">
+      <a href="https://t.me/AdTradesBot/sync" style="
+        display:inline-block;
+        background:#007bff;
+        color:#fff;
+        text-decoration:none;
+        padding:12px 20px;
+        border-radius:6px;
+        font-size:18px;
+        font-weight:600;
+      ">🚀 Launch SmartSync Mini App</a>
+    </div>
+
+    <!-- Monetag Display Area -->
     <div id="monetag-ad-container">
       <p>Loading Monetag Ads...</p>
     </div>
 
-    <!-- ✅ Telegram Mini App Open Button -->
-    <div class="tg-btn-container">
-      <a href="https://t.me/AdTradesBot/sync" target="_blank" class="tg-btn">
-        🚀 Open SmartSync Telegram App
-      </a>
-      <p class="small-note">Use inside Telegram for a smoother experience.</p>
+    <!-- Popunder Trigger Button -->
+    <div style="text-align:center; margin-top:30px;">
+      <button id="earnBtn" style="
+        padding:14px 22px;
+        font-size:17px;
+        background:#28a745;
+        border:none;
+        border-radius:6px;
+        color:white;
+        cursor:pointer;
+      ">
+        💰 Start Earning
+      </button>
     </div>
+
   </main>
 
   <footer>
-    <p>© 2025 AdTradeGame — All Rights Reserved.</p>
+    <p>© 2025 AdTradeGame. All Rights Reserved.</p>
     <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
   </footer>
 
@@ -58,10 +82,17 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
-          .then(() => console.log('Service Worker Registered'))
-          .catch(err => console.log('Service Worker Failed:', err));
+          .then(() => console.log('Service Worker registered successfully.'))
+          .catch(err => console.log('Service Worker registration failed:', err));
       });
     }
+  </script>
+
+  <!-- Popunder Activation -->
+  <script>
+  document.getElementById("earnBtn").addEventListener("click", function() {
+    window.open("https://bit.ly/43vECJN", "_blank");
+  });
   </script>
 
 </body>
