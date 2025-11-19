@@ -1,37 +1,56 @@
-/* ---- FINAL UI IMPROVEMENTS ---- */
-#monetag-ad-container {
-  margin: 25px auto;
-  padding: 15px;
-  width: 330px;
-  min-height: 60px;
-  border: 1px dashed #bbb;
-  border-radius: 8px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
 }
 
-.tg-btn-container {
-  margin-top: 20px;
+.header {
+  text-align: center;
+  padding: 25px;
+  background: #005eff;
+  color: #fff;
+}
+
+.btn-center {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #00b32d;
+  color: white;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 .tg-btn {
   display: inline-block;
-  background: #0078ff;
-  color: #fff;
-  padding: 14px 26px;
-  border-radius: 10px;
-  font-size: 16px;
+  background: #0088cc;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
-  box-shadow: 0 3px 14px rgba(0,0,0,0.18);
-  transition: 0.25s;
 }
 
-.tg-btn:hover {
-  background: #005fcc;
-  transform: scale(1.05);
+#monetag-ad-area {
+  width: 100%;
+  max-width: 350px;
+  margin: 25px auto;
+  padding: 10px;
+  border: 1px dashed #bbb;
+  text-align: center;
+  background: #fff;
 }
 
-.small-note {
-  font-size: 13px;
-  color: #666;
-  margin-top: 8px;
+.footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  color: #777;
 }
